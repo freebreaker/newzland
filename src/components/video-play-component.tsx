@@ -82,7 +82,7 @@ export function VideoPlayComponent() {
   )
 }
 
-function DownloadIcon(props) {
+function DownloadIcon(props:any) {
   return (
     <svg
       {...props}
@@ -104,7 +104,7 @@ function DownloadIcon(props) {
 }
 
 
-function FileIcon(props) {
+function FileIcon(props:any) {
   return (
     <svg
       {...props}
@@ -125,7 +125,7 @@ function FileIcon(props) {
 }
 
 
-function MaximizeIcon(props) {
+function MaximizeIcon(props:any) {
   return (
     <svg
       {...props}
@@ -148,7 +148,7 @@ function MaximizeIcon(props) {
 }
 
 
-function PlayIcon(props) {
+function PlayIcon(props:any) {
   return (
     <svg
       {...props}
@@ -168,7 +168,7 @@ function PlayIcon(props) {
 }
 
 
-function SkipForwardIcon(props) {
+function SkipForwardIcon(props:any) {
   return (
     <svg
       {...props}
@@ -189,7 +189,7 @@ function SkipForwardIcon(props) {
 }
 
 
-function VideoIcon(props) {
+function VideoIcon(props:any) {
   return (
     <svg
       {...props}
@@ -210,7 +210,7 @@ function VideoIcon(props) {
 }
 
 
-function Volume2Icon(props) {
+function Volume2Icon(props:any) {
   return (
     <svg
       {...props}
@@ -232,7 +232,7 @@ function Volume2Icon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props:any) {
   return (
     <svg
       {...props}

@@ -303,7 +303,7 @@ export function Mail() {
   )
 }
 
-function MountainIcon(props) {
+function MountainIcon(props:any) {
   return (
     <svg
       {...props}
@@ -323,7 +323,7 @@ function MountainIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props:any) {
   return (
     <svg
       {...props}

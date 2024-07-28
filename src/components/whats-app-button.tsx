@@ -44,7 +44,7 @@ export function WhatsAppButton() {
   )
 }
 
-function PhoneIcon(props) {
+function PhoneIcon(props:any) {
   return (
     <svg
       {...props}
@@ -64,7 +64,7 @@ function PhoneIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props:any) {
   return (
     <svg
       {...props}

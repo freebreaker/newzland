@@ -46,6 +46,7 @@ export function FacebookFooter() {
   )
 }
 
+// @ts-ignore
 function FacebookIcon(props) {
   return (
     <svg
@@ -66,7 +67,7 @@ function FacebookIcon(props) {
 }
 
 
-function InstagramIcon(props) {
+function InstagramIcon(props:any) {
   return (
     <svg
       {...props}
@@ -88,7 +89,7 @@ function InstagramIcon(props) {
 }
 
 
-function TextIcon(props) {
+function TextIcon(props:any) {
   return (
     <svg
       {...props}
@@ -110,7 +111,7 @@ function TextIcon(props) {
 }
 
 
-function TwitterIcon(props) {
+function TwitterIcon(props:any) {
   return (
     <svg
       {...props}
@@ -130,7 +131,7 @@ function TwitterIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props:any) {
   return (
     <svg
       {...props}
@@ -151,7 +152,7 @@ function XIcon(props) {
 }
 
 
-function YoutubeIcon(props) {
+function YoutubeIcon(props:any) {
   return (
     <svg
       {...props}

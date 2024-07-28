@@ -96,7 +96,7 @@ export function ShopModal() {
   )
 }
 
-function AlarmClockIcon(props) {
+function AlarmClockIcon(props:any) {
   return (
     <svg
       {...props}
@@ -121,7 +121,7 @@ function AlarmClockIcon(props) {
 }
 
 
-function BriefcaseIcon(props) {
+function BriefcaseIcon(props:any) {
   return (
     <svg
       {...props}
@@ -142,7 +142,7 @@ function BriefcaseIcon(props) {
 }
 
 
-function CalendarIcon(props) {
+function CalendarIcon(props:any) {
   return (
     <svg
       {...props}
@@ -165,7 +165,7 @@ function CalendarIcon(props) {
 }
 
 
-function ClipboardIcon(props) {
+function ClipboardIcon(props:any) {
   return (
     <svg
       {...props}
@@ -186,7 +186,7 @@ function ClipboardIcon(props) {
 }
 
 
-function HandHelpingIcon(props) {
+function HandHelpingIcon(props:any) {
   return (
     <svg
       {...props}
@@ -208,7 +208,7 @@ function HandHelpingIcon(props) {
 }
 
 
-function LogOutIcon(props) {
+function LogOutIcon(props:any) {
   return (
     <svg
       {...props}
@@ -230,7 +230,7 @@ function LogOutIcon(props) {
 }
 
 
-function MailIcon(props) {
+function MailIcon(props:any) {
   return (
     <svg
       {...props}
@@ -251,7 +251,7 @@ function MailIcon(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon(props:any) {
   return (
     <svg
       {...props}
@@ -272,7 +272,7 @@ function SettingsIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}
@@ -295,7 +295,7 @@ function UsersIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props:any) {
   return (
     <svg
       {...props}
