@@ -34,6 +34,7 @@ import { ShopModal } from "./shop-modal"
 import { FacebookFooter } from "./facebook-footer"
 import { WhatsAppButton } from "./whats-app-button"
 import { VideoPlayComponent } from "./video-play-component"
+import { TopMenu } from "./top-menu"
 
 export function Component() {
   return (
@@ -41,16 +42,17 @@ export function Component() {
       <div className="bg-[#4c51bf] text-white py-2 text-center text-sm font-medium">
         Enjoy standard shipping on all orders
       </div>
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-gradient-to-r from-[#4c51bf] to-[#6b46c1] text-white">
+      <TopMenu />
+      <header style={{ display: 'none' }} className="px-4 lg:px-6 h-14 flex items-center bg-gradient-to-r from-[#4c51bf] to-[#6b46c1] text-white">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
           <MountainIcon className="h-6 w-6 text-white" />
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
+          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
             About Us
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
+          <Link href="/product" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
             Product & Service
           </Link>
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
@@ -71,7 +73,7 @@ export function Component() {
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
             MIC Construction
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
+          <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4 text-white" prefetch={false}>
             Contact Us
           </Link>
         </nav>
@@ -87,126 +89,40 @@ export function Component() {
                     New Zealand U-solar & Technology Company Limited
                   </h1>
                   <p className="max-w-[600px] text-white md:text-xl">
-                    Acme Inc provides innovative solutions to help your business thrive. From cloud-based infrastructure
-                    to cutting-edge analytics, we have the tools to take your company to the next level.
+                    We care of your expenses for
+                    comfortable living" we supply & install equipment for Houses, Offices, Farms, etc. for energy saving & comfortable living: 1) Artificial Intelligent Auto Systems 2) High Tech paint (U-solar paint) which saves your utility bill up to 60% 3)Solar systems c/w 3 patents: 16 tons truck can run on it, works as a "Glass House" for farm & free electricity, works as an "LED" monitor for advertising on the wall & free utilities 4) New Tech Batteries with low cost & higher capacity than traditional batteries 5) Al CCTV [Hikvision]
+                    6) Remote & control system 7) Gardening: tiles, path, route lighting, etc. 8) Renovation
+                    9)construction
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center lg:justify-start">
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-[#7b46c1] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#6b46c1] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Get Started
-                  </Link>
                   {/* Learn More */}
                   <ShopModal />
                 </div>
               </div>
-              <video
+              <img
+                src="/placeholder.svg"
+                width="450"
+                height="165"
+                alt="Banner"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+              />
+              {/* <video
                 src="/hero-video.mp4"
                 autoPlay
                 loop
                 muted
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-              />
+              /> */}
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f3f4f6]">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-[#e5e7eb] px-3 py-1 text-sm text-[#4b5563]">
-                  Key Features
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#1f2937]">
-                  Unlock Your Business Potential
-                </h2>
-                <p className="max-w-[900px] text-[#4b5563] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Acme Inc offers a comprehensive suite of tools and services to help your business thrive. From
-                  cloud-based infrastructure to advanced analytics, we have everything you need to take your company to
-                  the next level.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-4">
-                <ul className="grid gap-6">
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold text-[#1f2937]">Cloud Infrastructure</h3>
-                      <p className="text-[#4b5563]">
-                        Scalable and reliable cloud-based infrastructure to power your business.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold text-[#1f2937]">Advanced Analytics</h3>
-                      <p className="text-[#4b5563]">
-                        Gain deep insights into your business with our powerful analytics tools.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold text-[#1f2937]">Automation</h3>
-                      <p className="text-[#4b5563]">Streamline your workflows with our suite of automation tools.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <video
-                src="/features-video.mp4"
-                autoPlay
-                loop
-                muted
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <VideoPlayComponent />
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <VideoPlayComponent />
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-[#1f2937]">
-                Take Your Business to New Heights
-              </h2>
-              <p className="mx-auto max-w-[600px] text-[#4b5563] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Let Acme Inc be your partner in growth. Contact us today to learn how we can help your business thrive.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link
-                href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-[#4c51bf] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#6b46c1] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                prefetch={false}
-              >
-                Get Started
-              </Link>
-              <Link
-                href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-[#4c51bf] bg-transparent px-8 text-sm font-medium shadow-sm transition-colors hover:bg-[#6b46c1] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                prefetch={false}
-              >
-                Contact Sales
-              </Link>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f3f4f6]">
+        <section id='about' className="w-full py-12 md:py-24 lg:py-32 bg-[#f3f4f6]">
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#1f2937]">About Acme Inc</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#1f2937]">About US</h2>
                   <p className="max-w-[600px] text-[#4b5563] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Acme Inc was founded in 2010 with the mission to provide innovative solutions to help businesses
                     thrive. Our team of experts is dedicated to delivering cutting-edge technology and personalized
@@ -305,7 +221,69 @@ export function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#1f2937]">Contact Us</h2>
+                <div className="inline-block rounded-lg bg-[#e5e7eb] px-3 py-1 text-sm text-[#4b5563]">
+                  Key Features
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#1f2937]">
+                  Unlock Your Business Potential
+                </h2>
+                <p className="max-w-[900px] text-[#4b5563] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Acme Inc offers a comprehensive suite of tools and services to help your business thrive. From
+                  cloud-based infrastructure to advanced analytics, we have everything you need to take your company to
+                  the next level.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+              <div className="flex flex-col justify-center space-y-4">
+                <ul className="grid gap-6">
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold text-[#1f2937]">Cloud Infrastructure</h3>
+                      <p className="text-[#4b5563]">
+                        Scalable and reliable cloud-based infrastructure to power your business.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold text-[#1f2937]">Advanced Analytics</h3>
+                      <p className="text-[#4b5563]">
+                        Gain deep insights into your business with our powerful analytics tools.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold text-[#1f2937]">Automation</h3>
+                      <p className="text-[#4b5563]">Streamline your workflows with our suite of automation tools.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <video
+                src="/features-video.mp4"
+                autoPlay
+                loop
+                muted
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+          <VideoPlayComponent />
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+          <VideoPlayComponent />
+        </section>
+
+
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#f3f4f6]">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#1f2937]">Drop Us a line!</h2>
                 <p className="max-w-[600px] text-[#4b5563] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Have a question or need help? Fill out the form below and we'll get back to you as soon as possible.
                 </p>
